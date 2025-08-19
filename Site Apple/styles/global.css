@@ -1,0 +1,187 @@
+:root{
+    --bg-primary: #000000;
+    --text-light: #FFFFFF;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+    --spirited-main-color: #DED2B9;
+}
+
+header{
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    height: fit-content;
+    opacity: 0.9;
+    position: sticky; /*vai fixar o header mesmo com o scroll */
+    top: 0;
+    z-index: 1;
+
+    padding: 12px 0;
+}
+
+header nav ul{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    background-color: var(--bg-primary);
+}
+
+header nav ul li {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+
+    list-style: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main section{
+    text-align: center;
+    position: relative;
+}
+
+main .main-section h1{
+    margin-right: 90px;
+    color: var(--title-primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main section img{
+    width: 100%;
+    height: auto;
+}
+
+main .main-section h2{
+    margin-right: 90px;
+    color: var(--subtitle-color);
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 14px;
+}
+
+main .main-section a{
+    margin-right: 90px;
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .main-section a:hover{
+    text-decoration: underline;
+}
+
+main .main-section .text-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 51px;
+}
+
+main .spirited-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .spirited-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60%;
+}
+
+main .spirited-section > div:last-child{
+    bottom: 50px;
+
+}
+
+main .spirited-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--spirited-main-color);
+    letter-spacing: -0.6px;
+
+}
+
+main .spirited-section p {
+    color: var(--title-primary-color);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.11px;
+}
+
+main .spirited-section span{
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
+}
+
+
+
+main .iphone-section h2{
+    margin-top: 60px;
+    margin-right: 90px;
+    color: var(--title-primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-section p{
+    margin-top: 500px;
+    margin-right: 90px;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
+    gap: 8px;
+}
+
+
+main .iphone-section a{
+    margin-right: 90px;
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .iphone-section a:hover{
+    text-decoration: underline;
+}
+
+main .iphone-section .text-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 51px;
+}
